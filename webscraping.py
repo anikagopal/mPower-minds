@@ -13,7 +13,7 @@ def crawl_page(main_url,page):
         new_url = soup.find("section",{"class":"d8-wysiwyg cb-margin-top-72"})
     else:
         new_url = soup.find("table",{"class":"table"})
-    htmlFile = open("C:\\Users\\dhira\\Documents\\AWS\\Science_Project\\Website_Project\\"+page+".html", "w")
+    htmlFile = open("C:\\AWS\\Website_Project\\"+page+".html", "w")
     htmlFile.write(str(new_url))
     htmlFile.close()
 
